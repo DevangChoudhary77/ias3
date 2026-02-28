@@ -4,21 +4,21 @@ import { Logo } from './Shared';
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-900 text-slate-300 py-16">
+    <footer className="bg-zinc-900 text-zinc-300 py-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div>
-            <Logo className="mb-6 [&_span]:text-white [&_.text-blue-600]:text-blue-400" />
-            <p className="mb-6 text-sm leading-relaxed text-slate-400">
+            <Logo className="mb-6 [&_span]:text-white [&_.text-emerald-600]:text-emerald-400" />
+            <p className="mb-6 text-sm leading-relaxed text-zinc-400">
               Empowering the next generation of civil servants with comprehensive,
               strategic, and personalized UPSC preparation.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="text-slate-400 hover:text-white transition-colors"><Twitter className="h-5 w-5" /></a>
-              <a href="#" className="text-slate-400 hover:text-white transition-colors"><Linkedin className="h-5 w-5" /></a>
-              <a href="#" className="text-slate-400 hover:text-white transition-colors"><Instagram className="h-5 w-5" /></a>
-              <a href="#" className="text-slate-400 hover:text-white transition-colors"><Youtube className="h-5 w-5" /></a>
+              <a href="#" className="text-zinc-400 hover:text-white transition-colors"><Twitter className="h-5 w-5" /></a>
+              <a href="#" className="text-zinc-400 hover:text-white transition-colors"><Linkedin className="h-5 w-5" /></a>
+              <a href="#" className="text-zinc-400 hover:text-white transition-colors"><Instagram className="h-5 w-5" /></a>
+              <a href="#" className="text-zinc-400 hover:text-white transition-colors"><Youtube className="h-5 w-5" /></a>
             </div>
           </div>
 
@@ -51,22 +51,22 @@ export default function Footer() {
             <h3 className="mb-6 font-serif text-lg font-semibold text-white">Contact Us</h3>
             <ul className="space-y-4 text-sm">
               <li className="flex items-start gap-3">
-                <MapPin className="h-5 w-5 text-blue-400 shrink-0" />
+                <MapPin className="h-5 w-5 text-emerald-400 shrink-0" />
                 <span>123 Knowledge Avenue, Mukherjee Nagar, New Delhi, 110009</span>
               </li>
               <li className="flex items-center gap-3">
-                <Phone className="h-5 w-5 text-blue-400 shrink-0" />
+                <Phone className="h-5 w-5 text-emerald-400 shrink-0" />
                 <span>+91 98765 43210</span>
               </li>
               <li className="flex items-center gap-3">
-                <Mail className="h-5 w-5 text-blue-400 shrink-0" />
+                <Mail className="h-5 w-5 text-emerald-400 shrink-0" />
                 <span>contact@secureias.com</span>
               </li>
             </ul>
           </div>
         </div>
 
-        <div className="mt-16 border-t border-slate-800 pt-8 text-center text-sm text-slate-500 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="mt-16 border-t border-zinc-800 pt-8 text-center text-sm text-zinc-500 flex flex-col md:flex-row justify-between items-center gap-4">
           <p>&copy; {new Date().getFullYear()} Secure IAS. All rights reserved.</p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>

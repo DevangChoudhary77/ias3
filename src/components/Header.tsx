@@ -46,8 +46,8 @@ export default function Header() {
             <Link
               key={link.name}
               to={link.path}
-              className={`text-sm font-medium transition-colors hover:text-blue-600 ${
-                location.pathname === link.path ? 'text-blue-600' : 'text-slate-600'
+              className={`text-sm font-medium transition-colors hover:text-emerald-600 ${
+                location.pathname === link.path ? 'text-emerald-600' : 'text-zinc-600'
               }`}
             >
               {link.name}
@@ -57,18 +57,18 @@ export default function Header() {
 
         {/* Desktop Actions */}
         <div className="hidden md:flex items-center gap-4">
-          <button className="p-2 text-slate-500 hover:text-blue-600 transition-colors">
+          <button className="p-2 text-zinc-500 hover:text-emerald-600 transition-colors">
             <Search className="h-5 w-5" />
           </button>
-          <button className="p-2 text-slate-500 hover:text-blue-600 transition-colors">
+          <button className="p-2 text-zinc-500 hover:text-emerald-600 transition-colors">
             <Bell className="h-5 w-5" />
           </button>
-          <button className="p-2 text-slate-500 hover:text-blue-600 transition-colors">
+          <button className="p-2 text-zinc-500 hover:text-emerald-600 transition-colors">
             <User className="h-5 w-5" />
           </button>
           <Link
             to="/courses"
-            className="ml-2 rounded-full bg-blue-600 px-5 py-2 text-sm font-medium text-white shadow-sm hover:bg-blue-700 transition-colors"
+            className="ml-2 rounded-full bg-emerald-600 px-5 py-2 text-sm font-medium text-white shadow-sm hover:bg-emerald-700 transition-colors"
           >
             Enroll Now
           </Link>
@@ -76,12 +76,12 @@ export default function Header() {
 
         {/* Mobile Menu Button */}
         <div className="flex items-center gap-4 md:hidden">
-          <button className="p-2 text-slate-500 hover:text-blue-600 transition-colors">
+          <button className="p-2 text-zinc-500 hover:text-emerald-600 transition-colors">
             <Search className="h-5 w-5" />
           </button>
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="p-2 text-slate-600 hover:text-blue-600 transition-colors"
+            className="p-2 text-zinc-600 hover:text-emerald-600 transition-colors"
           >
             {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
@@ -90,30 +90,30 @@ export default function Header() {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full bg-white border-t border-slate-100 shadow-lg py-4 px-4 flex flex-col gap-4">
+        <div className="md:hidden absolute top-full left-0 w-full bg-white border-t border-zinc-100 shadow-lg py-4 px-4 flex flex-col gap-4">
           {navLinks.map((link) => (
             <Link
               key={link.name}
               to={link.path}
               className={`text-base font-medium p-2 rounded-lg ${
-                location.pathname === link.path ? 'bg-blue-50 text-blue-600' : 'text-slate-600 hover:bg-slate-50'
+                location.pathname === link.path ? 'bg-emerald-50 text-emerald-600' : 'text-zinc-600 hover:bg-zinc-50'
               }`}
             >
               {link.name}
             </Link>
           ))}
-          <div className="h-px bg-slate-100 my-2"></div>
-          <div className="flex items-center justify-between p-2 text-slate-600">
+          <div className="h-px bg-zinc-100 my-2"></div>
+          <div className="flex items-center justify-between p-2 text-zinc-600">
             <span className="font-medium">Notifications</span>
             <Bell className="h-5 w-5" />
           </div>
-          <div className="flex items-center justify-between p-2 text-slate-600">
+          <div className="flex items-center justify-between p-2 text-zinc-600">
             <span className="font-medium">Profile</span>
             <User className="h-5 w-5" />
           </div>
           <Link
             to="/courses"
-            className="mt-2 w-full rounded-lg bg-blue-600 px-5 py-3 text-center text-sm font-medium text-white shadow-sm hover:bg-blue-700 transition-colors"
+            className="mt-2 w-full rounded-lg bg-emerald-600 px-5 py-3 text-center text-sm font-medium text-white shadow-sm hover:bg-emerald-700 transition-colors"
           >
             Enroll Now
           </Link>

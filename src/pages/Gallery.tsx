@@ -50,7 +50,7 @@ export default function Gallery() {
   ];
 
   return (
-    <div className="bg-slate-50 min-h-screen pb-24 pt-24 relative overflow-hidden">
+    <div className="bg-zinc-50 min-h-screen pb-24 pt-24 relative overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
@@ -59,7 +59,7 @@ export default function Gallery() {
           className="w-full h-full object-cover opacity-20"
           referrerPolicy="no-referrer"
         />
-        <div className="absolute inset-0 bg-slate-50/80"></div>
+        <div className="absolute inset-0 bg-zinc-50/80"></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -74,7 +74,7 @@ export default function Gallery() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
           {images.map((img, index) => (
             <FadeIn key={index} delay={index * 0.1}>
-              <div className="group relative overflow-hidden rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 aspect-[4/3] bg-slate-200">
+              <div className="group relative overflow-hidden rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 aspect-[4/3] bg-zinc-200">
                 <img 
                   src={img.url} 
                   alt={img.title} 
@@ -82,7 +82,7 @@ export default function Gallery() {
                   referrerPolicy="no-referrer"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-                  <span className="text-blue-400 text-xs font-bold uppercase tracking-wider mb-1">{img.category}</span>
+                  <span className="text-emerald-400 text-xs font-bold uppercase tracking-wider mb-1">{img.category}</span>
                   <h3 className="text-white text-lg font-semibold">{img.title}</h3>
                 </div>
               </div>
