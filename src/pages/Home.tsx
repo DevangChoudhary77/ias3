@@ -19,12 +19,7 @@ export default function Home() {
         <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 w-full">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-16">
             <div className="max-w-2xl">
-              <FadeIn>
-                <div className="inline-flex items-center gap-2 rounded-full bg-emerald-500/20 px-4 py-2 text-sm font-medium text-emerald-200 backdrop-blur-sm mb-6 border border-emerald-500/30">
-                  <span className="flex h-2 w-2 rounded-full bg-emerald-400"></span>
-                  Admissions Open for 2026-27
-                </div>
-              </FadeIn>
+
               <FadeIn delay={0.1}>
                 <h1 className="font-serif text-5xl font-bold leading-tight tracking-tight sm:text-6xl lg:text-7xl mb-6">
                   Awaken the <span className="text-emerald-400">Bureaucrat</span> Within
@@ -55,26 +50,6 @@ export default function Home() {
             </div>
 
           </div>
-        </div>
-      </section>
-
-      {/* Quote Section */}
-      <section className="relative py-32 bg-zinc-900 text-white text-center px-4 overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <img
-            src="/assets/images/ashok_emblem_hq.png"
-            alt="Ashok Stambh Motif"
-            className="h-full w-full object-cover opacity-40 mix-blend-screen"
-          />
-          <div className="absolute inset-0 bg-emerald-950/80"></div>
-        </div>
-        <div className="relative z-10 max-w-4xl mx-auto">
-          <FadeIn>
-            <p className="font-serif text-3xl md:text-4xl italic font-light leading-relaxed text-zinc-300">
-              "Dream, dream, dream. Dreams transform into thoughts and thoughts result in action."
-            </p>
-            <p className="mt-8 text-emerald-400 font-bold uppercase tracking-[0.2em] text-sm">— Dr. A.P.J. Abdul Kalam</p>
-          </FadeIn>
         </div>
       </section>
 
@@ -141,6 +116,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+
 
       {/* Strategic Programs */}
       <section className="py-24 relative bg-zinc-900 text-white overflow-hidden">
